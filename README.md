@@ -45,3 +45,24 @@ How many jobs are configured?
 What is the name of the job that runs the testing?
 
 
+# Lab
+
+1. Add 3 new routes to the API
+
+| Method | Path | Description |
+|---------|------|-------------|
+| `GET` | `/api/v1/users` | Get all users |
+| `POST` | `/api/v1/users` | Create a user |
+| `GET` | `/api/v1/users/:id` | Get a user |
+
+2. Add a test for each of the routes that properly returns a 200 status code.
+
+3. Create a Heroku app using the `heroku create` command.
+
+4. Add the name of the heroku app and an API key to the settings of your project in Circle CI.
+
+5. Deploy the app to Heroku.
+
+
+
+
