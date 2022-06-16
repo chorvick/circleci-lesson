@@ -9,10 +9,10 @@ jobs:
     steps:
       - checkout
       - python/install-packages:
-          pkg-manager: pip
+          pkg-manager: poetry
       - run:
           name: Run tests
-          command: python -m pytest
+          command: poetry run pytest
       - persist_to_workspace:
           root: ~/project
           paths:
@@ -35,5 +35,5 @@ workflows:
             - build_and_test # only deploy if the build_and_test job has completed
           filters:
             branches:
-              only: main # only deploy when on main
+              only: main
               
