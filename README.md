@@ -42,5 +42,6 @@ How mant workflows are configured?
 
 How many jobs are configured?
 
-Which job is configured to run when a branch is triggered?
+What is the name of the job that runs the testing?
+
 
